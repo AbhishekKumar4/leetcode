@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class GoodPairs {
     public int numIdenticalPairs(int[] nums) {
         HashMap map = new HashMap();
+        
         int result = 0;
         for(int i = 0; i<nums.length; i++) {
             if(map.containsKey(nums[i])) {
